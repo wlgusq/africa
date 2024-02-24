@@ -1,0 +1,135 @@
+@charset "utf-8";
+
+/* layout서식 header, main, footer */
+
+header{
+  width:100%;
+  position: relative;
+  z-index:1000;
+}
+
+.h_inner{
+  background:#4E4D5F;
+  height:30px;  
+}
+.h_top{
+  width:1025px;height:30px;
+  margin:0px auto;
+  color:#fff;
+  display:flex;
+  justify-content: end;
+}
+.lnb{
+  background:#525d9f;
+}
+.lnb > ul{
+  width:260px;
+  display:flex;
+  justify-content: space-around;
+}
+.lnb > ul > li{
+  line-height:30px;
+}
+.lnb a{color:#fff;}
+.h_bottom{
+  width:100%;height:80px;
+  /* margin:0px auto; */  
+  /* background-image:url('주소');
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-position:center; */
+  position:relative;
+}
+h1{
+  width:1025px;
+  margin:0px auto;
+
+}
+h1 > a{
+  position:relative;
+  z-index:50;
+}
+.navi_wrap{
+  width:100%;height:40px;
+  background-color:rgba(65, 56, 139, 0.8);
+  transition:0.5s;
+  overflow:hidden;
+  position:relative;top:-40px;
+  z-index:40;
+}
+.navi_wrap:hover{ height:280px;}
+.gnb{
+  width:100%;height:40px;
+  margin:0px auto;
+  /* position:absolute;
+  right:0px;bottom:22px; */
+  background:#fff;
+}
+.gnb > ul{
+  position:relative;z-index:51;
+  width:1025px; margin:0px auto;
+  display:flex; /* 자식요소 li 가로배치 */
+  justify-content:end;
+}
+.gnb > ul > li{
+  position:relative;
+}
+.gnb > ul > li > a{
+  padding:0px 20px; margin:0px 5px; font-size:16px;
+  font-weight:500; transition:0.5s;
+}
+.gnb > ul > li > a:hover{
+  color:#525d9f;
+}
+/* 서브메뉴 서식 */
+.sub{
+  position:absolute;
+  width:100%;top:40px;
+}
+.sub > li{
+  line-height:40px;
+  text-align:center;
+}
+.sub > li > a{
+  font-size:14px;
+  color:#fff;
+}
+.sub > li > a:hover{
+  font-weight:500; /* 300, 400, 500 */
+  text-decoration: underline;
+}
+
+/* index페이지의 메인레이아웃 */
+main{
+  padding-top:80px;
+  padding-bottom:20px;
+}
+
+
+/* 푸터서식 */
+footer{
+  background:#e7e7e7;
+  padding:10px 0px;
+}
+.f_inner{
+  width:1025px;height:120px;
+  margin:0px auto;
+  position:relative;
+}
+.f_inner > h2{
+  position:absolute;
+  right:10px;bottom:10px;
+}
+.f_inner > .f_lnb{padding-top:30px;}
+.f_lnb > ul > li{
+  float:left;padding:0px 10px;
+}
+.f_lnb > ul > li:first-child a{
+  padding-right:14px;
+  border-right:1px solid #333;
+}
+footer address{
+  clear:left;
+  padding-top:10px;line-height:24px;
+}
+

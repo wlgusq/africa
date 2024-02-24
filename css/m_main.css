@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/* 모바일 메인 m_main.css */
+main{padding-top: 50px;}
+
+.slide{
+  position: relative;
+  height: 62vh; /* viewport height */
+  overflow: hidden;
+}
+.slide img{
+  /* width: 100%; */
+  transform: translateY(-205px);
+}
+.slide > h2{display: none;}
+.mySwiper .swiper-wrapper{
+  position: relative;
+}
+.mySwiper .swiper-slide > h3{
+  font-size: 1.4em;
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  padding: 6px 4%;
+  line-height: 40px;
+  position: absolute;
+  left: 50%; top: 33%;
+  transform: translate(-50%,-50%);
+  z-index: 100;
+  border-radius: 10px;
+}
+
+/* 메인내비게이션 */
+.m_gnb > ul{
+  width: 96%;
+  display: grid;
+  margin: 20px auto;
+  /* margin:20px 5% */
+  border: 1px solid #f00;
+  grid-template-columns: repeat(3,auto);
+  grid-gap:10px;
+}
+.m_gnb > ul >li{
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.m_gnb > ul >li:last-child{
+  grid-area: 3/1/4/4;
+}
+.m_gnb .simg{
+  background: url(../mimages/nav_icon.png);
+  width: 83px; height: 66px;
+  background-size: 340px;
+  display: inline-block;
+}
+.m_gnb .mnu{
+  display: block;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+.m_gnb li:nth-child(2) .simg{background-position: -76px 0px;}
+.m_gnb li:nth-child(3) .simg{background-position: -156px 3px;}
+.m_gnb li:nth-child(4) .simg{background-position: -240px 0px;}
+.m_gnb li:nth-child(5) .simg{background-position: 6px -62px;}
+.m_gnb li:nth-child(6) .simg{background-position: -65px -63px;}
+.m_gnb li:last-child .simg{
+  background-position: -164px -71px;
+  background-size: 400px;
+  width: 64px; height: 50px;
+}
+.m_gnb li:last-child{
+  line-height: 48px; height: 48px;
+  overflow: hidden;
+}
+.m_gnb li:last-child .mnu{
+  display: inline-block;
+  font-size: 1rem;
+}
+
+/* 둔산점 정보 */
+.info{
+  width: 90%; height: 70px;
+  background-image: url(../mimages/info_back.png);
+  margin: 20px auto;
+  color: #fff; background-size: 100%;
+}
+.info h2 i.fa-phone{
+  font-size: 1.5rem;   /* 24px => 1.5rem */
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px 5% 0px 5%;
+  float: left;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.info > h2{
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500; line-height: 70px;
+  width: 35%;
+  float: left;
+}
+.info p{
+  width: 65%; float: right;
+  padding-bottom: 10px;
+}
+.tel{padding-top: 12px;}
+.tel a{color: #fff; font-size: 1rem;}

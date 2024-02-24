@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+html{
+  scroll-behavior: smooth;
+}
+/* 모바일 레이아웃 서식 */
+/* 상단 헤더 */
+header{
+  width: 100%;
+  height: 60px;
+  background: #fff;
+  position: fixed;
+  left: 0px; top: 0px;
+  z-index: 500;
+}
+
+header > h1{
+  padding-left: 10px;
+}
+header > h1 img{
+  height: 60px;
+}
+
+/* 체크박스 숨기기 */
+#toggle{
+  display: none;
+}
+
+
+/* 전체메뉴 버튼 서식 */
+.t_btn{
+  position: absolute;
+  right: 10px; top: 5px;
+  font-size: 25px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.gnb{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px; left: 100%;
+  background: rgba(0,0,0,.7);
+  transition: 0.5s;
+  z-index: 200;
+}
+.gnb input[type=checkbox]{display: none
+  ;}
+/* 전체메뉴 클릭 시 체크박스에 체크되면서 .gnb가 나옴 */
+#toggle:checked ~ .gnb{left: 0%;}
+
+#sub1:checked +.sub{display: block;}
+#sub2:checked +.sub{display: block;}
+#sub3:checked +.sub{display: block;}
+#sub4:checked +.sub{display: block;}
+#sub5:checked +.sub{display: block;}
+#sub6:checked +.sub{display: block;}
+
+.gnb > ul{
+  width: 70%; height: 100%;
+  background: rgb(83, 83, 184);
+  float: right;
+  /* position: absolute; */
+  padding-top: 40px;
+}
+.gnb > ul > li{
+  border-bottom: 1px solid #fff;
+  line-height: 50px;
+  text-indent: 10px;
+}
+
+/* 메인메뉴 서식 */
+.gnb > ul > li > label{
+  font-size: 1rem;
+  color: #fff;
+  display: block;
+}
+
+/* 서브메뉴 서식 */
+.sub{
+  display: none;
+  background-color: rgba(122, 122, 201, 0.8);
+  /* opacity: 0;
+  height: 0px; */
+}
+.sub > li{text-indent: 20px;}
+.sub > li > a{
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.c_btn{
+  color: #fff;
+  font-size: 30px;
+  padding: 12px;
+  position: absolute;
+  left: 2%; top: 1%;
+}
+.fa-angle-down{
+  float: right; font-size: 16px;
+  padding: 10px 6px 2px 2px;
+}
+
+/* sns 서식 */
+.gnb .fab{
+  position: absolute;
+  bottom: 30px;
+  font-size: 34px;
+  color: #fff;
+}
+.fa-instagram-square{left: 66%;}
+.fa-facebook{left: 76%;}
+.fa-youtube{left: 86%;}
+
+
+
+
+
+/* 하단 푸터서식 */
+footer{
+  height: 230px;
+  width: 100%;
+  text-align: center;
+  background-color: #eee;
+}
+footer > a{
+  margin: 5px;
+  display: inline-block;
+}
+footer > h2 > a > img{
+  height: 60px;
+  margin-top: 20px;
+}
+footer a:nth-child(2){
+  border: 2px double #999;
+  padding: 3px 10px;
+}
+footer > p{
+  padding-top: 20px;
+}
+
+/* TOP 버튼 */
+footer > a.top_btn{
+  background-color: rgba(0,0,0,.5);
+  border-radius: 3px;
+  z-index: 500;
+  position: fixed;
+  padding: 9px 10px;
+  bottom: 40px; right: 4%;
+}
+footer > a.top_btn > i{
+  color: #fff;
+  font-size: 25px;
+}
